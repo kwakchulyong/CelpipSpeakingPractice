@@ -5,7 +5,7 @@ CELPIP TEST
 https://secure.paragontesting.ca/InstructionalProducts/FreeOnlineSampleTest/FOST
 
 
-![ex_screenshot](./introduce/1.png)
+[initial](https://raw.githubusercontent.com/kwakchulyong/CelpipSpeakingPractice/main/introduce/1.PNG)
 
 
 오프라인에서도 볼수 있게 하고, 영어 스터디 멤버들과 공유하기 위해서 정적인 페이지로 제작했습니다. 웹에서 마이크로 연결하기 위해서 사용되는 navigator.getUserMedia는 보안상 http://에서는 작동이 불가능하고,  https://를 사용하거나, file://를 사용한 로컬 컴퓨터로만 작동이 가능합니다.
@@ -19,5 +19,10 @@ API : Recorder.js(Web Audio API) https://github.com/mattdiamond/Recorderjs
 사용법
 1.index.html를 실행합니다.
 2.실제 시험과 동일한 연습문제를 포함한 8문제가 출력되고, 각 문제당 30초의 준비시간과 60초의 레코딩 시간이 주어집니다.
+[initial](https://raw.githubusercontent.com/kwakchulyong/CelpipSpeakingPractice/main/introduce/2.PNG)
+
 3.준비시간이 끝나면, 녹음기능이 활성화 되고, 웹브라우저에서 허가를 하면 녹음됩니다. 거부할시에, 녹음되지 않습니다.
+[initial](https://raw.githubusercontent.com/kwakchulyong/CelpipSpeakingPractice/main/introduce/3.PNG)
+
 4.레코딩 시간이 끝나면, 자동으로 녹음된 파일을 다운로드시킵니다. 그리고, 녹음된 파일을 듣거나, 다시 다운로드를 요청할수 있습니다.
+[initial](https://raw.githubusercontent.com/kwakchulyong/CelpipSpeakingPractice/main/introduce/4.PNG)
