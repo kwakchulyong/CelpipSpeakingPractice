@@ -4,13 +4,8 @@ Celpip은 캐나다에서 만든 캐나다 자체 영어시험입니다. 2018년
 셀핍 시험 사이트<br/>
 https://secure.paragontesting.ca/InstructionalProducts/FreeOnlineSampleTest/FOST
 
-
-<center>
-<img src="https://raw.githubusercontent.com/kwakchulyong/CelpipSpeakingPractice/main/introduce/1.PNG" width="100%" height="100%">
-</center>
-
-
-와이파이가 불가능한 지역에서 오프라인에서도 볼수 있게 하고, 영어 스터디 멤버들과 공유하기 위해서 정적인 페이지로 제작했습니다. HTML 단일페이지로, 스크립트를 이용하여 화면이 변경됩니다. 웹에서 마이크로 연결하기 위해서 사용되는 navigator.getUserMedia는 보안상 http에서는 작동이 불가능하고, https를 사용하거나, file를 사용한 로컬 컴퓨터로만 작동이 가능합니다.
+<br/>
+와이파이가 불가능한 지역에서 오프라인에서도 볼수 있게 하고, 영어 스터디 멤버들과 공유하기 위해서 정적인 페이지로 제작했습니다. HTML 하나로만 이루어진 단일페이지로, 스크립트를 이용하여 화면이 변경됩니다. 웹에서 마이크로 연결하기 위해서 사용되는 navigator.getUserMedia는 보안상 http에서는 작동이 불가능하고, https를 사용하거나, file를 사용한 로컬 컴퓨터로만 작동이 가능합니다.
 
 개발언어 : HTML5, Javascript, CSS <br/>
 API : Recorder.js(Web Audio API) 참고사이트 https://blog.addpipe.com/using-recorder-js-to-capture-wav-audio-in-your-html5-web-site/ <br/>
