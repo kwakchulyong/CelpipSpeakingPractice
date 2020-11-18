@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>CELPIP Speaking Mock Test</title>
+	<!--[if IE]> <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
+
+	<style>
+/* common */
+html,body{width:100%;height:100%}
+html{overflow-y:scroll}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,form,fieldset,p,button{margin:0;padding:0}
+body,h1,h2,h3,h4,input,button{font-family:NanumGothicWeb,verdana,dotum,Helvetica,sans-serif;font-size:13px;color:#383d41}
+body{background-color:#fff;*word-break:break-all;-ms-word-break:break-all}
+img,fieldset,iframe{border:0 none}
+li{list-style:none}
+figure {border: 10px solid transparent; padding: 15px;}
+
+/* layout */
+#wrap{width:1000px;margin:0 auto}
+section{float:left;width:1000px; height:1000px;border:1px solid #ccc;line-height:20px}
+
+</style>
+	<script src="js/questions.js"></script>
+	<script src="js/common.js"></script>
+
+</head>
+
+<body onload="onload();">
+<div id="init">
+
+</div>
+<div id="wrap">
+	<section id="instructions">
+		<article>
+			<table style="width:1000px; margin-top:80px;" font-size="x-large">
+				<tr style="background-color: #f2f2f2; height:100px;">
+					<td>
+						Speaking test instructions<br/><br/>
+						-In this sample test, you should use a timer to complete each task within a given amount of time.<br/><br/>
+						-Scores are not provided for Speaking assignments in this sample test, and answers are recorded.<br/><br/>
+						-If you do not complete an assignment within the time given on the official exam, the screen will move to the next assignment. You cannot go back to the previous operation. However, in this sample test you need to click "Next" to proceed with the test.<br/><br/>
+						-Complete the speaking test practice in about 20 minutes.<br/><br/>
+						<div style="text-align: center;">
+							<button onclick="startText();">START</button>
+						</div>
+					</td>
+				</tr>
+			</table>
+		</article>
+	</section>
+
+	<section id = "question" style="display:none;">
+		<article>
+			<table style="width:1000px; margin-top:80px;">
+				<tr style="background-color: #f2f2f2; height:50px;">
+					<th style="width:500px; text-align: left; padding-left:5px;" ><span id="questionTitle"></span></th>
+					<th style="text-align: right;">Preparation: <span id="prepareTime"></span> seconds Recording: <span id="recordingTime"></span> seconds &nbsp;
+						<button onclick="next();">NEXT</button>
+						<!--
+                        <button onclick="before();">Before</button><button onclick="next();">NEXT</button><button onclick="restart();">ReStart</button><button onclick="stop();">Stop</button>
+                        -->
+
+					</th>
+				</tr>
+				<tr style="height:50px;">
+					<td style="font-size:16px" colspan=2><span id="questionContent"></span></td>
+				</tr>
+			</table>
+			<span id="questionContentExtra" style="font-size:14px;"></span>
+			<hr/>
+			<div style="display:none;" id="pictureArea">
+				<figure onClick="selectPicture('pictureImgFig');" id="pictureImgFig" style="display: inline-block; min-height: 100px; margin-right: 10px; float:left;">
+					<img id="pictureImg" src="" height="400" width="300">
+					<figcaption><span id="pictureImgCaption"></span></figcaption>
+				</figure>
+				<figure onClick="selectPicture('pictureImg2Fig');" style="display:none; display: inline-block; min-height: 100px; margin-right: 10px; float:left;" id="pictureImg2Fig">
+					<img id="pictureImg2" src="" height="400" width="300">
+					<figcaption><span id="pictureImg2Caption"></span></figcaption>
+				</figure>
+			</div>
+			<div style="height:50px; width: 100%; text-align: center;" id="cntArea">
+				<div id="countDownForm" style=" display: inline-block; background-color:#f2f2f2; width:300px; height:100px; padding-top:25px; text-align:center;">
+					<span id="cntName" style="font-size:16px;"></span>
+					<br/>
+					<span id="cntNumber" style="font-size:16px;"></span>
+					<br/>
+					<progress id="progressBar" style="height:40px; width:200px; border: 1px solid #0063a6; background: #fff;  display:none; margin-left: auto; margin-right:auto;" value="0" max="100"></progress>
+				</div>
+				<p><strong>Recordings:</strong></p>
+				<div id="formats"></div>
+				<ol id="recordingsList"></ol>
+			</div>
+		</article>
+	</section>
+</div>
+
+<script src="js/recorder.js"></script>
+
+</body>
+</html>
