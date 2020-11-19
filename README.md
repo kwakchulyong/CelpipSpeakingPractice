@@ -26,7 +26,7 @@ Live DEMO : https://josephkwak.github.io/
 <img src="https://raw.githubusercontent.com/kwakchulyong/CelpipSpeakingPractice/main/introduce/3.png" width="100%" height="100%">
 </center>
 
-4.레코딩 시간이 끝나면, 자동으로 녹음된 파일을 다운로드시킵니다. 그리고, 녹음된 파일을 듣거나, 다시 다운로드를 요청할수 있습니다.
+4.레코딩 시간이 끝나면, 자동으로 녹음된 파일을 다운로드시킵니다. 저장되는 파일은 WAV 형식입니다. 그리고, 녹음된 파일을 웹에서 듣거나, 다시 다운로드를 요청할수 있습니다.
 <center>
 <img src="https://raw.githubusercontent.com/kwakchulyong/CelpipSpeakingPractice/main/introduce/4.png" width="100%" height="100%">
 </center>
