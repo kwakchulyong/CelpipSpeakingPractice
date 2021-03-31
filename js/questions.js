@@ -1,4 +1,23 @@
 function setQuestion() {
+	//총 문제는 Task1-8까지 8문제입니다.
+	//칼럼명
+	//TESTNUMBER           : 현재 몇 번째 시험인지. 현재의 경우 0 한건만 존재합니다.
+	//TASKNUMBER           : 현재 몇 번째 Task인지.
+	//PSEC                 : 준비시간
+	//RSEC                 : 녹음시간
+	//IMG                  : 이미지 경로 1
+	//IMGCAPTION           : 이미지 캡션 1
+	//IMG2                 : 이미지 경로 2
+	//IMG2CAPTION          : 이미지 경로 2
+	//IMG3                 : 이미지 경로 3
+	//IMG3CAPTION          : 이미지 경로 3
+	//QUESTIONTITLE        : 질문 제목
+	//QUESTIONCONTENT      : 질문 내용
+	//QUESTIONCONTENTEXTRA : 질문 내용외 추가내용
+	//SPECIALCONTENT       : 특별한 내용
+
+
+
 	  var inputValue =  '{ "QUESTION" : [' +
 '{ "TESTNUMBER" : "0",  "TASKNUMBER" : "0",  "PSEC" : "30",  "RSEC" : "60",  "IMG" : "null",  "IMGCAPTION": "null", "IMG2": "null", "IMG2CAPTION": "null", "IMG3": "null", "IMG3CAPTION": "null", "QUESTIONTITLE": "Practice Task", "QUESTIONCONTENT": "Tell me about your best friend", "QUESTIONCONTENTEXTRA": "null", "SPECIALCONTENT" : "null" },'+
 '{ "TESTNUMBER" : "0",  "TASKNUMBER" : "1",  "PSEC" : "30",  "RSEC" : "90",  "IMG" : "null",  "IMGCAPTION": "null", "IMG2": "null", "IMG2CAPTION": "null", "IMG3": "null", "IMG3CAPTION": "null", "QUESTIONTITLE": "Speaking Task 1: Giving Advice", "QUESTIONCONTENT": "What is Your Favorite Place on Earth?", "QUESTIONCONTENTEXTRA": "null", "SPECIALCONTENT" : "null" },'+
